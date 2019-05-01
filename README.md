@@ -8,7 +8,7 @@ The expectation is that this portal will be implemented as an HTML/JS embedded a
 Functional Version: [https://dev.ppmi.io/#About](https://dev.ppmi.io/#About)
 ## Install HTML (Minimum)
 
-**Add HTML Line 1 to App Homepage**.  Installation of the portal requires an HTML call to `ppmi-rna-private.js` application, indicating the location of the database API under the `global_api` parameter, and a `div` element where the APP will be built. 
+Installation of the portal requires an HTML call to `ppmi-rna-private.js` application, indicating the location of the database API under the `global_api` parameter, and a `div` element where the APP will be built. 
 
 ** Add HTML Line 1**. This `itg_ppmi_rna_app` div element will house the script. 
 
