@@ -17,7 +17,7 @@ Installation of the portal requires an HTML call to `ppmi-rna-private.js` applic
 ```
 <div id="itg_ppmi_rna_app" style="max-width:1500px"></div>
 <script type="text/javascript"  
-   src="https://cdn.jsdelivr.net/gh/USCDTG/public_ppmi_rna_app/ppmi-rna-public.1.03.js" 
+   src="https://cdn.jsdelivr.net/gh/USCDTG/public_ppmi_rna_app/ppmi-rna-public.1.032.js" 
    api="https://dev.ppmi.io/private">
 </script>
 ```
