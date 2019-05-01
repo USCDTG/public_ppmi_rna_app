@@ -3,12 +3,12 @@
 
 **Version 1.03**
 
-The expectation is that this portal will be implemented as an HTML/JS embedded application where a node.js RESTful JSON API provides **json** documents. 
+The expectation is that this portal will be implemented as an HTML/JS embedded application where a node.js RESTful JSON API provides **json** documents. To install this embedded application, two lines must be added to the HTML of an existing parent page.  
 
 Functional Version: [https://dev.ppmi.io/#About](https://dev.ppmi.io/#About)
 ## Install HTML (Minimum)
 
-Installation of the portal requires an HTML call to `ppmi-rna-private.js` application, indicating the location of the database API under the `global_api` parameter, and a `div` element where the APP will be built. 
+Installation of the portal requires an HTML call to `ppmi-rna-private.js` application, indicating the location of the database API under the `global_api` parameter, and a `div` element where the APP will be built.  To install this embedded application, two lines must be added to the HTML of an existing parent page.  
 
 ** Add HTML Line 1**. This `itg_ppmi_rna_app` div element will house the script. 
 
