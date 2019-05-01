@@ -1,0 +1,5 @@
+node_modules
+public/gene_info.bson
+public
+db
+mongodb
