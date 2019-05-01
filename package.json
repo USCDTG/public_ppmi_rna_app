@@ -1,0 +1,28 @@
+{
+  "name": "public_ppmi_rnaseq_app",
+  "version": "1.03",
+  "description": "API used PPMI RNA-seq Portal",
+  "main": "api.js",
+  "scripts": {
+    "download": "mkdir -p mongodb logs db && curl -o mongodb/public_ppmi_rnaseq_db.tar http://www.ppmi.io/db/public_ppmi_rnaseq_db.tar && tar -xvf public_ppmi_rnaseq_db.tar",
+    "build": "mongorestore",
+    "mongodb": "mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork",
+    "test": "nodemon ./api.js",
+    "start": "node ./api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USCDTG/ppmi_rnaseq_app.git"
+  },
+  "author": "David Craig",
+  "license": "Contact",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "debug": "^3.1.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "http": "^0.0.0",
+    "mongoose": "^4.13.18"
+  }
+}
