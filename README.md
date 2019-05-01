@@ -38,7 +38,7 @@ Installation of the portal requires an HTML call to `ppmi-rna-private.js` applic
 **Download git and cd to directory**
 
 ```
-git clone git@github.com:USCDTG/ppmi_rnaseq_app.git
+git clone git@github.com:USCDTG/public_ppmi_rna_app.git
 cd ppmi_rnaseq_app
 ```
 
