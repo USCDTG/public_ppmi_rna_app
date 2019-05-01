@@ -39,7 +39,7 @@ Installation of the portal requires an HTML call to `ppmi-rna-private.js` applic
 
 ```
 git clone git@github.com:USCDTG/public_ppmi_rna_app.git
-cd ppmi_rnaseq_app
+cd public_ppmi_rnaseq_db
 ```
 
 **Install yarn dependencies**
@@ -54,7 +54,7 @@ cd ppmi_rnaseq_app
 
 ```
 mkdir -p mongodb logs db
-curl -o mongodb/ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rnaseq_db.tar
+curl -o mongodb/public_ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rnaseq_db.tar
 tar -xvf public_ppmi_rnaseq_db.tar
 ```
 
