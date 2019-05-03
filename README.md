@@ -1,18 +1,16 @@
 # PUBLIC
 ## PUBLIC_PPMI_RNA_APP
 
-**Version 1.03**
+**Version 1.033**
 
-The expectation is that this portal will be implemented as an HTML/JS embedded application where a node.js RESTful JSON API provides **json** documents. To install this embedded application, two lines must be added to the HTML of an existing parent page.  
+This page provides for installation of the PPMI RNA Portal 'public access' version. This public access version provides researchers summary level data.
 
-Functional Version: [https://dev.ppmi.io/#About](https://dev.ppmi.io/#About)
-## Install HTML (Minimum)
+To minimally install this embedded application, two lines must be added to the HTML of an existing parent page. The first line is where the application is built, and the second provides the code for the application and gives the URL for the API.
 
-Installation of the portal requires an HTML call to `ppmi-rna-private.js` application, indicating the location of the database API under the `global_api` parameter, and a `div` element where the APP will be built.  To install this embedded application, two lines must be added to the HTML of an existing parent page.  
+Functional Version: https://dev.ppmi.io/#About
 
-** Add HTML Line 1**. This `itg_ppmi_rna_app` div element will house the script. 
-
-** Add HTML Line 2**. The script is called from its public location, noting that no individual level data is retained in the script. The script needs a `api` set to the location of the JSON API serving gene-level information.  If this is not set, the app will display the `About` page, but not return gene-level data.
+Install HTML (Minimum)
+The app will built in the HTML element with "itg_ppmi_rna_app". The size and location of the app are defined by the css style paramters in line 1. Line 2 provides the location of the javascript app. The javascript app does not contain genetic data and can be made public. It can be downloaded from this github repository or can be used via the CDN. Recommendation is to test with CDN. The API location can be used, or an API can be built following the 'fully contained API' below. An example HTML page is provided in the repository.
 
 ```
 <div id="itg_ppmi_rna_app" style="max-width:1500px"></div>
