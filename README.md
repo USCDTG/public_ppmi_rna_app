@@ -7,7 +7,7 @@ This page provides for installation of the PPMI RNA Portal 'public access' versi
 
 To minimally install this embedded application, two lines must be added to the HTML of an existing parent page. The first line is where the application is built, and the second provides the code for the application and gives the URL for the API.
 
-Functional Version: https://dev.ppmi.io/#About
+Functional Version: https://dev.ppmi.io/public.html
 
 Install HTML (Minimum)
 The app will built in the HTML element with "itg_ppmi_rna_app". The size and location of the app are defined by the css style paramters in line 1. Line 2 provides the location of the javascript app. The javascript app does not contain genetic data and can be made public. It can be downloaded from this github repository or can be used via the CDN. Recommendation is to test with CDN. The API location can be used, or an API can be built following the 'fully contained API' below. An example HTML page is provided in the repository.
