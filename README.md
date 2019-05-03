@@ -15,8 +15,8 @@ The app will built in the HTML element with "itg_ppmi_rna_app". The size and loc
 ```
 <div id="itg_ppmi_rna_app" style="max-width:1500px"></div>
 <script type="text/javascript"  
-   src="https://cdn.jsdelivr.net/gh/USCDTG/public_ppmi_rna_app/ppmi-rna-public.1.032.js" 
-   api="https://dev.ppmi.io/private">
+   src="https://cdn.jsdelivr.net/gh/uscdtg/public_ppmi_rna_app/ppmi-rna-public.1.033.js" 
+   api="https://dev.ppmi.io/pub">
 </script>
 ```
 
