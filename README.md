@@ -82,7 +82,7 @@ For this command, you must be in ppmi_rna_app directory to work as is, housing t
 
 For production runs, PM2 is recommended.
 
-`pm2 start api.js -i 4`
+`pm2 start public_api.js -i 4`
 
 
 ## Browser Support
