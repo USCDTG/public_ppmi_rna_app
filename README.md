@@ -36,7 +36,7 @@ The app will built in the HTML element with "itg_ppmi_rna_app". The size and loc
 **Download git and cd to directory**
 
 ```
-git clone git@github.com:USCDTG/public_ppmi_rna_app.git
+git clone https://github.com/USCDTG/public_ppmi_rna_app
 cd public_ppmi_rnaseq_db
 ```
 
