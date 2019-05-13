@@ -53,7 +53,7 @@ cd public_ppmi_rnaseq_db
 ```
 mkdir -p mongodb logs db
 curl -o mongodb/public_ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rnaseq_db.tar
-tar -xvf public_ppmi_rnaseq_db.tar
+tar -xvf mongodb/public_ppmi_rnaseq_db.tar
 ```
 
 **Run Mongodb**
