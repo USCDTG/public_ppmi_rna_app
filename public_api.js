@@ -4,6 +4,7 @@
 const express  = require('express');
 const mongoose = require('mongoose');
 const compression = require('compression');
+const path = require('path');
 const bodyParser   = require('body-parser');
 const http = require('http');
 const dotenv = require('dotenv');
@@ -39,7 +40,6 @@ var LZString=function(){function o(o,r){if(!t[o]){t[o]={};for(var n=0;n<o.length
             if (pos) {
                 var count = Object.keys(pos).length;
                 res.json({genepos:encodeURI(LZString.compressToBase64(JSON.stringify(pos)))});  
-                console.log( count)   
             }
         }).limit(500).select({ "_id":0,"gene": 1, "start_pos": 1,"last_pos": 1,"transcripts":1,"PHI":1,"GDI":1,"biotype":1,"first_pos":1,"last_pos":1,"reads":1,"chr":1,"dir":1,"end_pos":1,"start_pos":1});
     }; 
@@ -53,7 +53,6 @@ var LZString=function(){function o(o,r){if(!t[o]){t[o]={};for(var n=0;n<o.length
         PublicGeneModel.findOne({'gene':req.params.gene}, function(err, gene) {
             if (err) { console.log ("error");res.json({})}           
             if (gene) {
-                console.log('my gene was '+ mygene)
                 res.json({gene:encodeURI(LZString.compressToBase64(JSON.stringify(gene)))});     
             } else (res.json({}))                
         }).select({ "_id":0});
@@ -65,6 +64,8 @@ var LZString=function(){function o(o,r){if(!t[o]){t[o]={};for(var n=0;n<o.length
 //////////////////////////////////////////////////////////////////////////////////
 // Server
     app.use(compression()); 
+    app.use(express.static(path.join(__dirname, 'public')));
+    app.use('/public',express.static(path.join(__dirname, 'public')));
     app.set('port', port);
     var server = http.createServer(app);
     server.listen(port);
