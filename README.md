@@ -15,8 +15,8 @@ The app will built in the HTML element with "itg_ppmi_rna_app". The size and loc
 ```
 <div id="itg_ppmi_rna_app" style="max-width:1500px"></div>
 <script type="text/javascript"  
-   src="https://dev.ppmi.io/public/ppmi-rna-public.1.035.js" 
-   api="https://dev.ppmi.io/pub">
+   src="https://public.ppmi.io/public/ppmi-rna-public.1.035.js" 
+   api="https://public.ppmi.io/pub">
 </script>
 ```
 
@@ -52,7 +52,7 @@ cd public_ppmi_rnaseq_db
 
 ```
 mkdir -p mongodb logs db
-curl -o mongodb/public_ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rnaseq_db.tar
+curl -o mongodb/public_ppmi_rnaseq_db.tar https://public.ppmi.io/db/public_ppmi_rnaseq_db.tar
 tar -xvf mongodb/public_ppmi_rnaseq_db.tar
 ```
 

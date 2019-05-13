@@ -1,5 +1,6 @@
 node_modules
 public/gene_info.bson
+public/public_ppmi_rnaseq_db.tar
 public
 db
 mongodb
