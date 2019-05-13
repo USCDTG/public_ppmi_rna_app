@@ -1,7 +1,7 @@
 # PUBLIC
 ## PUBLIC_PPMI_RNA_APP
 
-**Version 1.033**
+**Version 1.035**
 
 This page provides for installation of the PPMI RNA Portal 'public access' version. This public access version provides researchers summary level data.
 
@@ -15,7 +15,7 @@ The app will built in the HTML element with "itg_ppmi_rna_app". The size and loc
 ```
 <div id="itg_ppmi_rna_app" style="max-width:1500px"></div>
 <script type="text/javascript"  
-   src="https://dev.ppmi.io/public/ppmi-rna-public.1.033.js" 
+   src="https://dev.ppmi.io/public/ppmi-rna-public.1.035.js" 
    api="https://dev.ppmi.io/pub">
 </script>
 ```
@@ -82,7 +82,7 @@ For this command, you must be in ppmi_rna_app directory to work as is, housing t
 
 For production runs, PM2 is recommended.
 
-`pm2 start server.js -i 4`
+`pm2 start api.js -i 4`
 
 
 ## Browser Support
@@ -108,7 +108,7 @@ PPMI2-  ├── gene_info.json  (33,840 Documents @ 608kb Each)
 
 ## Version
 
-Version 1.03
+Version 1.035
 
 ![Itg logo](http://dtg.usc.edu/images/itg.png)
 
