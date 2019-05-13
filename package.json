@@ -7,8 +7,8 @@
     "download": "mkdir -p mongodb logs db && curl -o mongodb/public_ppmi_rnaseq_db.tar http://www.ppmi.io/db/public_ppmi_rnaseq_db.tar && tar -xvf public_ppmi_rnaseq_db.tar",
     "build": "mongorestore",
     "mongodb": "mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork",
-    "test": "nodemon ./api.js",
-    "start": "node ./api.js"
+    "test": "nodemon ./public_api.js",
+    "start": "node ./public_api.js"
   },
   "repository": {
     "type": "git",
