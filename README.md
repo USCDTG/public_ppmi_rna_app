@@ -1,6 +1,6 @@
 # PUBLIC_PPMI_RNA_APP
 
-**Version 1.111**
+**Version 1.112**
 
 ## Install HTML (Minimum)
 This page provides for installation of the PPMI RNA Portal 'public access' version. This public access version provides researchers summary level data. To minimally install this embedded application, two `<div>` elements must be added to the HTML of an existing parent page. The first `div` is where the app is contained and requires `id=itg_ppmi_rna_app`, and the second `div` provides the API's URL. 
@@ -8,7 +8,7 @@ This page provides for installation of the PPMI RNA Portal 'public access' versi
 ```
 <div id="itg_ppmi_rna_app" style="max-width:1500px"></div>
 <script type="text/javascript"  
-   src="https://cdn.jsdelivr.net/gh/USCDTG/public_ppmi_rna_app/public/ppmi-rna-public.1.111.js" 
+   src="https://cdn.jsdelivr.net/gh/USCDTG/public_ppmi_rna_app/public/ppmi-rna-public.1.112.js" 
    api="https://public.ppmi.io/pub">
 </script>
 ```
