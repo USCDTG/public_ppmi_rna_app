@@ -1,6 +1,6 @@
 {
   "name": "public_ppmi_rnaseq_app",
-  "version": "1.1",
+  "version": "1.11",
   "description": "API used PPMI RNA-seq Portal",
   "main": "api.js",
   "scripts": {
