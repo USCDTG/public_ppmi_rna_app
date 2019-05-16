@@ -4,7 +4,7 @@
   "description": "API used PPMI RNA-seq Portal",
   "main": "api.js",
   "scripts": {
-    "mongodb": "mkdir -p mongodb logs db && curl -o mongodb/public_ppmi_rnaseq_db.tar https://public.ppmi.io/public_ppmi_rnaseq_db.tar && tar -xvf mongodb/public_ppmi_rnaseq_db.tar && mongorestore --drop",
+    "mongodb": "mkdir -p mongodb logs db && curl -o mongodb/public_ppmi_rnaseq_db.tar https://public.ppmi.io/public_ppmi_rnaseq_db.tar && tar -xvf mongodb/public_ppmi_rnaseq_db.tar && mongorestore --drop && rm -rf dump",
     "test": "nodemon ./public_api.js",
     "start": "node ./public_api.js"
   },
