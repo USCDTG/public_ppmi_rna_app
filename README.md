@@ -21,10 +21,7 @@ This page provides for installation of the PPMI RNA Portal 'public access' versi
 
 1. Install Prerequisites
 
-* [Node.js](https://nodejs.org/en/download/)
-* Yarn: `sudo yum install yarn` or `brew install yum` on MacOs
-* [MongoDB](https://www.mongodb.com/download-center#community).
-* PM2: `npm install pm2@latest -g`
+   [Node.js](https://nodejs.org/en/download/), Yarn: `sudo yum install yarn` or `brew install yum` on MacOs, [MongoDB](https://www.mongodb.com/download-center#community), PM2: `npm install pm2@latest -g`
 
 2. Download git and cd to directory**
 
@@ -38,15 +35,15 @@ cd public_ppmi_rnaseq_db
 5. Run Mongodb: `yarn mongodb` _or_ `mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
 6. Run API: `yarn start`
 7. Download databases: `yarn download`
- _alternative manual approach_
 
-```
-mkdir -p mongodb logs db
-curl -o mongodb/public_ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rnaseq_db.tar
-tar -xvf mongodb/public_ppmi_rnaseq_db.tar
-```
+   _alternative manual approach_
+   ```
+   mkdir -p mongodb logs db
+   curl -o mongodb/public_ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rnaseq_db.tar
+   tar -xvf mongodb/public_ppmi_rnaseq_db.tar
+   ```
 
-** For production runs, PM2 is recommended: ** `pm2 start public_api.js -i 4`
+**For production runs, PM2 is recommended:** `pm2 start public_api.js -i 4`
 
 **Ports**
 
