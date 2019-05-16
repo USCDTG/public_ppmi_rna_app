@@ -19,25 +19,25 @@ This page provides for installation of the PPMI RNA Portal 'public access' versi
 
 ## Optional Install Fully Contained API
 
-### Install Prerequisites
+1. Install Prerequisites
 
 * [Node.js](https://nodejs.org/en/download/)
 * Yarn: `sudo yum install yarn` or `brew install yum` on MacOs
 * [MongoDB](https://www.mongodb.com/download-center#community).
 * PM2: `npm install pm2@latest -g`
 
-# Download git and cd to directory**
+2. Download git and cd to directory**
 
 ```
 git clone https://github.com/USCDTG/public_ppmi_rna_app
 cd public_ppmi_rnaseq_db
 ```
 
-# Install yarn dependencies: `yarn install`
-# Build MongoDB Databases: `yarn build`
-# Run Mongodb: `yarn mongodb` _or_ `mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
-# Run API: `yarn start`
-# Download databases: `yarn download`
+3. Install yarn dependencies: `yarn install`
+4. Build MongoDB Databases: `yarn build`
+5. Run Mongodb: `yarn mongodb` _or_ `mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
+6. Run API: `yarn start`
+7. Download databases: `yarn download`
  _alternative manual approach_
 
 ```
