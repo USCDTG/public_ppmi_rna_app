@@ -25,25 +25,16 @@ An example HTML page is provided in the repository.
 
    [Node.js](https://nodejs.org/en/download/), [Yarn](https://yarnpkg.com/lang/en/docs/cli/install/), [MongoDB](https://www.mongodb.com/download-center#community), [PM2](https://pm2.io/doc/en/runtime/quick-start/)
 
-2. Download git and cd to directory**
+2. Download git, cd to directory, and install node.js dependencies**
 
    ```
    git clone https://github.com/USCDTG/public_ppmi_rna_app
    cd public_ppmi_rnaseq_db
+   yarn install
    ```
-
-3. Install yarn dependencies: `yarn install`
-4. Build MongoDB Databases: `yarn build`
-5. Run Mongodb: `yarn mongodb` _or_ `mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
-6. Run API: `yarn start`
-7. Download databases: `yarn download`
-
-   _alternative manual approach_
-   ```
-   mkdir -p mongodb logs db
-   curl -o mongodb/public_ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rnaseq_db.tar
-   tar -xvf mongodb/public_ppmi_rnaseq_db.tar
-   ```
+   
+3. Run Mongodb: `yarn mongodb` _or_ `mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
+4. Download & Build databases: `yarn download`
 
 **For production runs, PM2 is recommended:** `pm2 start public_api.js -i 4`
 
