@@ -21,14 +21,14 @@ This page provides for installation of the PPMI RNA Portal 'public access' versi
 
 1. Install Prerequisites
 
-   [Node.js](https://nodejs.org/en/download/), Yarn: `sudo yum install yarn` or `brew install yum` on MacOs, [MongoDB](https://www.mongodb.com/download-center#community), PM2: `npm install pm2@latest -g`
+   [Node.js](https://nodejs.org/en/download/), [Yarn](https://yarnpkg.com/lang/en/docs/cli/install/), [MongoDB](https://www.mongodb.com/download-center#community), [PM2](https://pm2.io/doc/en/runtime/quick-start/)
 
 2. Download git and cd to directory**
 
-```
-git clone https://github.com/USCDTG/public_ppmi_rna_app
-cd public_ppmi_rnaseq_db
-```
+   ```
+   git clone https://github.com/USCDTG/public_ppmi_rna_app
+   cd public_ppmi_rnaseq_db
+   ```
 
 3. Install yarn dependencies: `yarn install`
 4. Build MongoDB Databases: `yarn build`
@@ -51,20 +51,11 @@ Default ports are expected to be routed via proxy, such as with NGINX. Default n
 
 # Browser Support
 
-* Chrome latest
-* Firefox latest
-* Opera latest
-* Safari latest
-* Edge latest
+Chrome latest; Firefox latest; Opera latest; Safari latest; Edge latest
 
-# Embedded Dependencies
+# Embedded JS
 
-* Vega.js  
-* Jquery.js jQuery v3.2.1 
-* Skeleton CSS
-* lz-string.js  
-* easy-autocomplete.js http://github.com/pawelczak
-* Datatables https://datatables.net
+Vega.js; Jquery.js jQuery v3.2.1; Skeleton CSS; lz-string.js; easy-autocomplete.js http://github.com/pawelczak; Datatables https://datatables.net
 
 ![Itg logo](http://dtg.usc.edu/images/itg.png)
 
