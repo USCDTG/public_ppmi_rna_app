@@ -50,7 +50,7 @@ var LZString=function(){function o(o,r){if(!t[o]){t[o]={};for(var n=0;n<o.length
     var PublicGeneModel = GenePublicConn.model('gene_detail', GenePublicSchema);
     function PublicGeneFunc(req, res) {
         var mygene=req.params.gene;
-        PublicGeneModel.findOne({'gene':req.params.gene}, function(err, gene) {
+        PublicGeneModel.findOne({'names':req.params.gene}, function(err, gene) {
             if (err) { console.log ("error");res.json({})}           
             if (gene) {
                 res.json({gene:encodeURI(LZString.compressToBase64(JSON.stringify(gene)))});     
