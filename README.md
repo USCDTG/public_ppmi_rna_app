@@ -33,15 +33,12 @@ git clone https://github.com/USCDTG/public_ppmi_rna_app
 cd public_ppmi_rnaseq_db
 ```
 
-**Install yarn dependencies**
-
-`yarn install`
-
-**Download databases**
-
-`yarn download`
-
- _or_
+**Install yarn dependencies: ** `yarn install`
+**Building MongoDB Databases:** `yarn build`
+**Running Mongodb:** yarn mongodb _or_ `mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
+**Running API:** `yarn start`
+**Download databases:** `yarn download`
+ _alternative manual approach_
 
 ```
 mkdir -p mongodb logs db
@@ -49,35 +46,9 @@ curl -o mongodb/public_ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rna
 tar -xvf mongodb/public_ppmi_rnaseq_db.tar
 ```
 
-**Run Mongodb**
-This is optional and one can choose an alternative location, provided mongodb is running.
+**For production runs, PM2 is recommended: ** `pm2 start public_api.js -i 4`
 
-`yarn mongodb`
-
- _or_
-
-`mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
-
-**Build databases in MongoDB**
-For this command, you must be in ppmi_rna_app directory to work as is, housing the dump folder from above.
-
-`yarn build`
-
- _or_
-
-`mongorestore`
-
-
-
-**Start server**
-
-`yarn start`
-
-For production runs, PM2 is recommended.
-
-`pm2 start public_api.js -i 4`
-
-**Ports
+**Ports**
 
 Default ports are expected to be routed via proxy, such as with NGINX. Default node.js port is 3000 and mongodb is 27017. These can be altered within the `.env` file.
 
