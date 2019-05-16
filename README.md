@@ -27,7 +27,7 @@ Installation assumes `MongoDB` is running on port 27017, generating API on port 
 
    [Node.js](https://nodejs.org/en/download/), [Yarn](https://yarnpkg.com/lang/en/docs/cli/install/), [MongoDB](https://www.mongodb.com/download-center#community), [PM2](https://pm2.io/doc/en/runtime/quick-start/)
 
-2. Download git, cd to directory, and install node.js dependencies**
+2. Download git, cd to directory, and install node.js dependencies
 
    ```
    git clone https://github.com/USCDTG/public_ppmi_rna_app
