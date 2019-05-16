@@ -1,12 +1,10 @@
 {
   "name": "public_ppmi_rnaseq_app",
-  "version": "1.03",
+  "version": "1.01",
   "description": "API used PPMI RNA-seq Portal",
   "main": "api.js",
   "scripts": {
-    "download": "mkdir -p mongodb logs db && curl -o mongodb/public_ppmi_rnaseq_db.tar https://public.ppmi.io/public_ppmi_rnaseq_db.tar && tar -xvf tar -xvf mongodb/public_ppmi_rnaseq_db.tar",
-    "build": "mongorestore",
-    "mongodb": "mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork",
+    "mongodb": "mkdir -p mongodb logs db && curl -o mongodb/public_ppmi_rnaseq_db.tar https://public.ppmi.io/public_ppmi_rnaseq_db.tar && tar -xvf tar -xvf mongodb/public_ppmi_rnaseq_db.tar && mongorestore",
     "test": "nodemon ./public_api.js",
     "start": "node ./public_api.js"
   },
