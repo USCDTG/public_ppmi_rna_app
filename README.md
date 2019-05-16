@@ -3,14 +3,8 @@
 
 **Version 1.010**
 
-This page provides for installation of the PPMI RNA Portal 'public access' version. This public access version provides researchers summary level data.
-
-To minimally install this embedded application, two lines must be added to the HTML of an existing parent page. The first line is where the application is built, and the second provides the code for the application and gives the URL for the API.
-
-Functional Version: https://public.ppmi.io
-
-Install HTML (Minimum)
-The app will built in the HTML element with "itg_ppmi_rna_app". The size and location of the app are defined by the css style paramters in line 1. Line 2 provides the location of the javascript app. The javascript app does not contain genetic data and can be made public. It can be downloaded from this github repository or can be used via the CDN. Recommendation is to test with CDN. The API location can be used, or an API can be built following the 'fully contained API' below. An example HTML page is provided in the repository.
+### Install HTML (Minimum)
+This page provides for installation of the PPMI RNA Portal 'public access' version. This public access version provides researchers summary level data. To minimally install this embedded application, two lines must be added to the HTML of an existing parent page. The first line is the `div` element where the app is contained and requires `id=itg_ppmi_rna_app`, and the second provides the API's URL. An example HTML page is provided in the repository.
 
 ```
 <div id="itg_ppmi_rna_app" style="max-width:1500px"></div>
@@ -20,13 +14,14 @@ The app will built in the HTML element with "itg_ppmi_rna_app". The size and loc
 </script>
 ```
 
-**Unit Test**
+Functional Version: https://public.ppmi.io
+
+### Unit Test
  Placing the two HTML lines should allow for construction of the About Page, and use of the API. Please type `SNCA` into the gene search page and a gene description should appear.
 
+### Optional Install Fully Contained API
 
-## Install Fully Contained API
-
-### Install Prerequisites
+#### Install Prerequisites
 
 * [Node.js](https://nodejs.org/en/download/)
 * Yarn: `sudo yum install yarn` or `brew install yum` on MacOs
