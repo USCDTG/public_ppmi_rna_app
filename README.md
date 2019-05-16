@@ -1,7 +1,7 @@
 # PUBLIC
 ## PUBLIC_PPMI_RNA_APP
 
-**Version 1.035**
+**Version 1.010**
 
 This page provides for installation of the PPMI RNA Portal 'public access' version. This public access version provides researchers summary level data.
 
@@ -15,7 +15,7 @@ The app will built in the HTML element with "itg_ppmi_rna_app". The size and loc
 ```
 <div id="itg_ppmi_rna_app" style="max-width:1500px"></div>
 <script type="text/javascript"  
-   src="https://cdn.jsdelivr.net/gh/USCDTG/public_ppmi_rna_app/public/ppmi-rna-public.1.035.js" 
+   src="https://cdn.jsdelivr.net/gh/USCDTG/public_ppmi_rna_app/public/ppmi-rna-public.1.010.js" 
    api="https://public.ppmi.io/pub">
 </script>
 ```
@@ -52,7 +52,7 @@ cd public_ppmi_rnaseq_db
 
 ```
 mkdir -p mongodb logs db
-curl -o mongodb/public_ppmi_rnaseq_db.tar https://public.ppmi.io/db/public_ppmi_rnaseq_db.tar
+curl -o mongodb/public_ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rnaseq_db.tar
 tar -xvf mongodb/public_ppmi_rnaseq_db.tar
 ```
 
@@ -84,6 +84,9 @@ For production runs, PM2 is recommended.
 
 `pm2 start public_api.js -i 4`
 
+**Ports
+
+Default ports are expected to be routed via proxy, such as with NGINX. Default node.js port is 3000 and mongodb is 27017. These can be altered within the `.env` file.
 
 ## Browser Support
 
@@ -101,6 +104,7 @@ For production runs, PM2 is recommended.
 * lz-string.js  
 * easy-autocomplete.js http://github.com/pawelczak
 * Datatables https://datatables.net
+
 
 ## Tables/Docs
 
