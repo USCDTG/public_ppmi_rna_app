@@ -31,7 +31,7 @@ Installation assumes `MongoDB` is running on port 27017, generating API on port 
 
    ```
    git clone https://github.com/USCDTG/public_ppmi_rna_app
-   cd public_ppmi_rnaseq_db
+   cd public_ppmi_rna_app
    yarn install
    ```
    
