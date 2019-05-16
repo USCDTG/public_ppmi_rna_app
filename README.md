@@ -26,18 +26,18 @@ This page provides for installation of the PPMI RNA Portal 'public access' versi
 * [MongoDB](https://www.mongodb.com/download-center#community).
 * PM2: `npm install pm2@latest -g`
 
-**Download git and cd to directory**
+# Download git and cd to directory**
 
 ```
 git clone https://github.com/USCDTG/public_ppmi_rna_app
 cd public_ppmi_rnaseq_db
 ```
 
-* Install yarn dependencies: `yarn install`
-* Building MongoDB Databases: `yarn build`
-* Running Mongodb: `yarn mongodb` _or_ `mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
-* Running API: `yarn start`
-* Download databases: `yarn download`
+# Install yarn dependencies: `yarn install`
+# Build MongoDB Databases: `yarn build`
+# Run Mongodb: `yarn mongodb` _or_ `mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
+# Run API: `yarn start`
+# Download databases: `yarn download`
  _alternative manual approach_
 
 ```
@@ -46,7 +46,7 @@ curl -o mongodb/public_ppmi_rnaseq_db.tar https://www.ppmi.io/db/public_ppmi_rna
 tar -xvf mongodb/public_ppmi_rnaseq_db.tar
 ```
 
-* For production runs, PM2 is recommended: ** `pm2 start public_api.js -i 4`
+** For production runs, PM2 is recommended: ** `pm2 start public_api.js -i 4`
 
 **Ports**
 
