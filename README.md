@@ -1,9 +1,8 @@
-# PUBLIC
-## PUBLIC_PPMI_RNA_APP
+# PUBLIC_PPMI_RNA_APP
 
 **Version 1.010**
 
-### Install HTML (Minimum)
+## Install HTML (Minimum)
 This page provides for installation of the PPMI RNA Portal 'public access' version. This public access version provides researchers summary level data. To minimally install this embedded application, two lines must be added to the HTML of an existing parent page. The first line is the `div` element where the app is contained and requires `id=itg_ppmi_rna_app`, and the second provides the API's URL. An example HTML page is provided in the repository.
 
 ```
@@ -14,14 +13,13 @@ This page provides for installation of the PPMI RNA Portal 'public access' versi
 </script>
 ```
 
-Functional Version: https://public.ppmi.io
+**Functional Version:** https://public.ppmi.io
 
-### Unit Test
- Placing the two HTML lines should allow for construction of the About Page, and use of the API. Please type `SNCA` into the gene search page and a gene description should appear.
+**Unit Test**  Placing the two HTML lines should allow for construction of the About Page, and use of the API. Please type `SNCA` into the gene search page and a gene description should appear.
 
-### Optional Install Fully Contained API
+## Optional Install Fully Contained API
 
-#### Install Prerequisites
+### Install Prerequisites
 
 * [Node.js](https://nodejs.org/en/download/)
 * Yarn: `sudo yum install yarn` or `brew install yum` on MacOs
@@ -83,7 +81,7 @@ For production runs, PM2 is recommended.
 
 Default ports are expected to be routed via proxy, such as with NGINX. Default node.js port is 3000 and mongodb is 27017. These can be altered within the `.env` file.
 
-## Browser Support
+# Browser Support
 
 * Chrome latest
 * Firefox latest
@@ -91,7 +89,7 @@ Default ports are expected to be routed via proxy, such as with NGINX. Default n
 * Safari latest
 * Edge latest
 
-## Embedded Dependencies
+# Embedded Dependencies
 
 * Vega.js  
 * Jquery.js jQuery v3.2.1 
@@ -99,15 +97,6 @@ Default ports are expected to be routed via proxy, such as with NGINX. Default n
 * lz-string.js  
 * easy-autocomplete.js http://github.com/pawelczak
 * Datatables https://datatables.net
-
-
-## Tables/Docs
-
-PPMI2-  ├── gene_info.json  (33,840 Documents @ 608kb Each)
-
-## Version
-
-Version 1.035
 
 ![Itg logo](http://dtg.usc.edu/images/itg.png)
 
