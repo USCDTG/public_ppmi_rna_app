@@ -21,6 +21,8 @@ An example HTML page is provided in the repository.
 
 ## Optional Install Fully Contained API
 
+Installation assumes `MongoDB` is running on port 27017, generating API on port 3000, or  specified in `.env` file
+
 1. Install Prerequisites
 
    [Node.js](https://nodejs.org/en/download/), [Yarn](https://yarnpkg.com/lang/en/docs/cli/install/), [MongoDB](https://www.mongodb.com/download-center#community), [PM2](https://pm2.io/doc/en/runtime/quick-start/)
@@ -33,14 +35,8 @@ An example HTML page is provided in the repository.
    yarn install
    ```
    
-3. Run Mongodb: `yarn mongodb` _or_ `mkdir -p logs db && mongod --port 27017 --dbpath db --logpath logs/mongodb.log --fork`
-4. Download & Build databases: `yarn download`
-
-**For production runs, PM2 is recommended:** `pm2 start public_api.js -i 4`
-
-**Ports**
-
-Default ports are expected to be routed via proxy, such as with NGINX. Default node.js port is 3000 and mongodb is 27017. These can be altered within the `.env` file.
+3. Download & Build MongoDB databases: `yarn mongodb`
+4. Run API: `yarn start` or `pm2 start public_api.js -i 2`, where PM2 is preferred in production
 
 # Browser Support
 
