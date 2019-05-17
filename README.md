@@ -40,7 +40,7 @@ Installation assumes `MongoDB` is running on port 27017, generating API on port 
 
 # Browser Support
 
-Chrome 41+; Firefox 41+; Opera latest; Safari; Edge 15+
+Chrome 41+; Firefox 41+; Opera 29+; Safari 9+ on Yosemite; Edge 15+ on Windows 7,8,10
 
 # Embedded JS
 
