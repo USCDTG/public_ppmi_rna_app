@@ -19,7 +19,7 @@
     "compression": "^1.7.2",
     "debug": "^3.1.0",
     "dotenv": "^5.0.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "http": "^0.0.0",
     "path": "^0.12.7",
     "mongoose": "^4.13.18"
